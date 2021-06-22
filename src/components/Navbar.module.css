@@ -1,0 +1,198 @@
+.navbar{
+    display: flex;
+    background-color: #fff;
+    height: 4.6rem;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    font-size: 1.2rem;
+    top: 0;
+    z-index: 999;
+}
+
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 4.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 100%;
+    max-width: 81.25rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+}
+
+.navbarLogo{
+    align-items: center;
+    display: flex;
+    color: #242424;
+    justify-self: start;
+    text-decoration: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navbarLogo:hover{
+    color: #e8491d;
+    text-decoration: none;
+}
+
+.navbarIcon{
+    height: 60px;
+    width: 60px;
+}
+
+.navMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    justify-content: end;
+}
+
+.navLinks{
+    color: #242424;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+.navLinks:hover{
+    color: #e8491d;
+    text-decoration: none;
+}
+
+.navItem{
+    height: 3.125rem;
+    border-bottom: 2px solid transparent;
+}
+
+.navItem:after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .7s ease, background-color .5s ease;
+}
+
+.navItem:hover:after{
+    width: 100%;
+    background: #e8491d;
+}
+
+.faBars {
+    color: #000;
+  }
+  
+.menuIcon {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
+    }
+
+    .navMenu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .navMenuActive {
+      background: #fff;
+      left: 0;
+      opacity: 1;
+      transition: all 0.6s ease;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 40vh;
+      position: absolute;
+      top: 70px;
+    }
+  
+    .navLinks {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .navLinks:hover {
+      color: #f00946;
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    } 
+
+    .navItem:hover {
+      border: none;
+    }
+  
+    .navItem {
+      width: 100%;
+    }
+
+    .navItem:after{
+        content: "";
+        display: block;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: width .7s ease, background-color .5s ease;
+    }
+    
+    .navItem:hover:after{
+        width: 100%;
+        background: #e8491d;
+        margin-top: -20px
+    } 
+  
+    .navbarLogo {
+      position: absolute;
+      top: -20px;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+
+    .menuIcon {
+      display: block;
+      position: absolute;
+      color: #000;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .FaTimes {
+      color: #000;
+      font-size: 2rem;
+    }
+
+    .FaBars {
+        color: #000;
+        font-size: 2rem;
+      }
+  
+    .navBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 120px;
+    }
+  }

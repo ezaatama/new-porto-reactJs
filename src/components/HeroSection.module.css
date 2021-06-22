@@ -1,0 +1,198 @@
+.homeHeroSection{
+    color: #000;
+    padding: 120px 0;
+    height: 580px;
+}
+
+.container{
+    justify-content: space-between;
+    height: 4.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 100%;
+    max-width: 81.25rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+}
+
+.homeHeroSectionDarkBg{
+    color: #fff;
+    padding: 120px 0;
+    height: 500px;
+    background-color: #1c2237;
+}
+
+.homeHeroRow{
+    align-items: center;
+    display: flex;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 50%;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.homeHeroTextWrapper{
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+.heading{
+    margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 600;
+    color: #fff;
+}
+
+.headingDark{
+    margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 600;
+    color: #242424;
+}
+
+.subtitle{
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.subtitleDark{
+    max-width: 440px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    color:  #242424;
+}
+
+.homeHeroButton{
+    display: inline-block;
+    padding: 5px 0 10px 0;
+    z-index: 998;
+}
+
+
+.homeHeroImgWrapper{
+    max-width: 550px;
+}
+
+.homeHeroImg{
+    max-width: 95%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+}
+
+.particle{
+    position: absolute;
+    width: 100%;
+    max-width: 1150px;
+}
+
+img{
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.btnLarge{
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+    outline: none;
+    color: #000;
+    background-color: transparent;
+    border: 2px solid #e8491d;
+    box-shadow: 0px 10px 10px rgb(252 195 51 / 40%);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btnWide{
+    background-color: #e8491d;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgb(252 195 51 / 40%);
+    margin: 0 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btnWide:hover{
+    color: #FCC233;
+    background-color: #e8491d;
+    transition: all 0.2s ease-out;
+}
+
+.btn-link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    .headingDark{
+        font-size: 40px;
+    }
+    .btnLarge{
+        padding: 7px 12px;
+    }
+    .btnWide{
+        padding: 8px 12px;
+        margin: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .homeHeroSection{
+        height: 780px;
+    }
+    .homeHeroTextWrapper {
+      padding-bottom: 50px;
+    }
+    .col {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+
+    
+  }
+    @media screen and (max-width: 480px) {
+        .btnLarge{
+            padding: 4px 10px;
+        }
+        .btnWide{
+            padding: 5px 10px;
+        }
+    }

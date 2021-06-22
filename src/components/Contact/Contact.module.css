@@ -1,0 +1,93 @@
+.particle{
+    position: absolute;
+    width: 100%;
+    max-width: 1150px;
+}
+
+.contact{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 780px;
+    display: flex;
+    padding: 120px 0;
+}
+
+.contactImg{
+    padding: 50px;
+}
+
+.contactForm{
+    background-color: #fff;
+    border: 2px solid #00000013;
+    box-shadow: 0px 10px 10px rgb(252 195 51 / 40%);
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    z-index: 998;
+}
+
+.formHeading{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.formSubtitle{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+form{
+    width: 100%;
+}
+
+.input{
+    color: #000;
+    font-size: 14px;
+    border-radius: 8px;
+    line-height: 22px;
+    background-color: #F5F5F5;
+    padding: 13px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 85%;
+    border: 0px solid transparent;
+}
+
+.btnWide{
+    background-color: #e8491d;
+    color: #fff;
+    width: 50%;
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgb(252 195 51 / 40%);
+    margin: 20px 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btnWide:hover{
+    color: #FCC233;
+    background-color: #e8491d;
+    transition: all 0.2s ease-out;
+}
+
+@media screen and (max-width: 991px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .contactForm{
+        width: 100%;
+        z-index: 998;
+    }
+  }

@@ -1,0 +1,161 @@
+.container{
+    padding: 120px 0;
+    height: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headingPortofolio{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.menuTabsContainer{
+    padding: 5px 0;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.btnWide{
+    background-color: #e8491d;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgb(252 195 51 / 40%);
+    margin: 0 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btnWide:hover{
+    color: #FCC233;
+    background-color: #e8491d;
+    transition: all 0.2s ease-out;
+}
+
+.btnLarge{
+    background-color: #e8491d;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgb(252 195 51 / 40%);
+    margin: 0 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btnLarge:hover{
+    color: #FCC233;
+    background-color: #e8491d;
+    transition: all 0.2s ease-out;
+}
+
+.btnContent{
+    background-color: #e8491d;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgb(252 195 51 / 40%);
+    margin: 10px 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btnContent a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btnContent:hover{
+    color: #FCC233;
+    background-color: #e8491d;
+    transition: all 0.2s ease-out;
+}
+
+.menuItemsContainer{
+    max-width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: auto auto auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card{
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 10px 10px rgb(252 195 51 / 40%);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+
+.cardImg{
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.contentImg{
+    height: 200px;
+}
+
+.cardBody{
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.contentHeading{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contentSubtitle{
+    font-size: 16px;
+    color: rgb(145, 145, 145);
+}
+
+.showMore{
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .card {
+        width: 80%;
+    }
+    .menuTabsContainer{
+        width: 100%;
+    }
+    .btnWide{
+        margin: 0 10px 10px;
+    }
+    .menuItemsContainer{
+        max-width: 100%;
+        display: block;
+    }
+    
+  }

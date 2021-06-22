@@ -1,0 +1,96 @@
+.footerSection{
+    background-color: #1c2237;
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerLinks{
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.footerLinksWrapper{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+.footerLinksItems{
+    align-items: flex-start;
+    margin: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footerLinksItems > h2{
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.footerLinksItems a {
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footerLinksItems a:hover {
+    color: #e9e9e9;
+    transition: 0.3s ease-out;
+}
+
+.socialIconLink {
+    color: #fff;
+    font-size: 24px;
+}
+  
+.sosmedSection{
+    width: 100%;
+    max-width: 1000px;
+}
+
+.sosmedWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+.sosmedLogo{
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.websiteRights{
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .footerLinks {
+        padding-top: 2rem;
+      }
+    .footerLinksWrapper {
+        flex-direction: column;
+      }
+    
+    .sosmedWrap {
+        flex-direction: column;
+      }
+  }

@@ -1,0 +1,128 @@
+.homeContent{
+    color: #fff;
+    background-color: #FCC233;
+    height: 500px;
+}
+
+.container{
+    justify-content: space-between;
+    height: 4.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 100%;
+    max-width: 81.25rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+}
+
+.contentRow{
+    align-items: center;
+    display: flex;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 50%;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+.contentTextWrapper{
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 40px;
+}
+
+.headingContent{
+    margin-bottom: 20px;
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 600;
+    color: #fff;
+}
+
+.subtitleContent{
+    max-width: 440px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.contentButton{
+    padding: 5px 0 10px 0;
+    margin-left: -312px;
+}
+
+img{
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.contentImgWrapper{
+    max-width: 550px;
+}
+
+.contentHomeImg{
+    max-width: 95%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+}
+
+.btnLarge{
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+    outline: none;
+    color: #fff;
+    background-color: #e8491d;
+    border: 2px solid #e8491d;
+    box-shadow: 0px 10px 10px rgb(252 195 51 / 40%);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btnLarge:hover{
+    color: #FCC233;
+    background-color: #e8491d;
+    transition: all 0.2s ease-out;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    .contentButton{
+        margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contentTextWrapper {
+      padding-bottom: 50px;
+    }
+    .homeContent{
+        height: 780px;
+    }
+    .col {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
