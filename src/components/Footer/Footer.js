@@ -16,13 +16,13 @@ function Footer() {
                 <div className={style.footerLinksWrapper}>
                     <div className={style.footerLinksItems}>
                         <h2>Social Media</h2>
-                        <a
+                        {/* <a
                         className={style.socialIconLink}
                         href='#'
                         aria-label='Facebook'
                         >
                         <FaFacebook />
-                        </a>
+                        </a> */}
                         <a
                         className={style.socialIconLink}
                         href='https://www.instagram.com/ezaatama'
@@ -30,7 +30,7 @@ function Footer() {
                         >
                         <FaInstagram />
                         </a>
-                        <a
+                        {/* <a
                         className={style.socialIconLink}
                         href={
                             '#'
@@ -45,7 +45,7 @@ function Footer() {
                         aria-label='Twitter'
                         >
                         <FaTwitter />
-                        </a>
+                        </a> */}
                         <a
                         className={style.socialIconLink}
                         href="https://www.linkedin.com/in/reza-putra-pratama/"

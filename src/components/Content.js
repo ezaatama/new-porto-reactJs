@@ -17,10 +17,10 @@ function Content() {
                         <div className={style.col}>
                             <div className={style.contentTextWrapper}>
                                 <h1 className={style.headingContent}>
-                                    Beautiful Website
+                                    Beautiful Apps
                                 </h1>
                                 <p className={style.subtitleContent}>
-                                I will exclusively create you a beautiful website using React Js.
+                                I will exclusively create you a beautiful mobile apps both native or hybrid using Flutter.
                                 </p>
                             </div>
                             <div className={style.contentButton}>

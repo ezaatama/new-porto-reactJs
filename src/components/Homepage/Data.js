@@ -3,7 +3,7 @@ export const heroObjOne = {
     lightText : false,
     lightTextDesc : false,
     headline : "Hello, I'm Reza",
-    description : 'Im a Junior Front End Web Developer',
+    description : 'Im a Mobile Developer',
     buttonLabel1 : 'Download CV',
     buttonLabel2 : 'Contact Me',
     imgStart : '',
