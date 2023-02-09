@@ -4,8 +4,8 @@ import Menu from "./Menu";
 import { Link } from "react-router-dom";
 
 const GalleryReact = () => {
-  const [items, setItems] = useState(Menu);
-  const [visible, setVisible] = useState(3);
+  const [items] = useState(Menu);
+  const [visible] = useState(4);
 //   const filterItem = (categItem) => {
 //     const updatedItems = Menu.filter((curElem) => {
 //       return curElem.category === categItem;
