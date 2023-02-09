@@ -2,10 +2,7 @@ import React from 'react'
 import style from './Footer.module.css'
 import { Link } from 'react-router-dom';
 import {
-  FaFacebook,
   FaInstagram,
-  FaYoutube,
-  FaTwitter,
   FaLinkedin
 } from 'react-icons/fa';
 
