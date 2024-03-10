@@ -5,18 +5,18 @@ import { Link } from "react-router-dom";
 
 const GalleryReact = () => {
   const [items] = useState(Menu);
-  const [visible] = useState(4);
-//   const filterItem = (categItem) => {
-//     const updatedItems = Menu.filter((curElem) => {
-//       return curElem.category === categItem;
-//     });
+  const [visible] = useState(5);
+  //   const filterItem = (categItem) => {
+  //     const updatedItems = Menu.filter((curElem) => {
+  //       return curElem.category === categItem;
+  //     });
 
-//     setItems(updatedItems);
-//   };
+  //     setItems(updatedItems);
+  //   };
 
-//   const showMoreItems = () => {
-//     setVisible((prevValue) => prevValue + 3);
-//   };
+  //   const showMoreItems = () => {
+  //     setVisible((prevValue) => prevValue + 3);
+  //   };
 
   return (
     <>
@@ -41,8 +41,7 @@ const GalleryReact = () => {
                 </div> */}
         <div className={style.col}>
           <div className={style.contentTextWrapper}>
-            <p className={style.subCenter}>See all Project
-            </p>
+            <p className={style.subCenter}>See all Project</p>
           </div>
         </div>
 
@@ -51,21 +50,21 @@ const GalleryReact = () => {
             const { alt, image, name, description, to, see, id } = elem;
 
             return (
-                <Link to={`/portofolio/${id}`} className={style.link}>
-              <div className={style.row}>
-                <div className={style.card}>
-                  <div className={style.cardImg}>
-                    <img src={image} alt={alt} className={style.contentImg} />
-                  </div>
-                  <div className={style.cardBody}>
-                    <h3 className={style.contentHeading}>{name}</h3>
-                    <p className={style.contentSubtitle}>{description}</p>
-                    <button className={style.btnContent}>
-                      <a href={to}>{see}</a>
-                    </button>
+              <Link to={`/portofolio/${id}`} className={style.link}>
+                <div className={style.row}>
+                  <div className={style.card}>
+                    <div className={style.cardImg}>
+                      <img src={image} alt={alt} className={style.contentImg} />
+                    </div>
+                    <div className={style.cardBody}>
+                      <h3 className={style.contentHeading}>{name}</h3>
+                      <p className={style.contentSubtitle}>{description}</p>
+                      <button className={style.btnContent}>
+                        <a href={to}>{see}</a>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
               </Link>
             );
           })}
