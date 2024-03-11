@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import React from "react";
+import { useParams } from "react-router-dom";
 import Menu from "../TabMenu/Menu";
 import style from "./Detail.module.css";
 
@@ -38,19 +38,13 @@ const Detail = () => {
                   <p className={style.detailDescription}>{description_dua}</p>
                   <div className={style.gridContainer}>
                     <div className={style.gridItem}>
-                      <img
-                        src={image_satu}
-                      />
+                      <img src={image_satu} />
                     </div>
                     <div className={style.gridItem}>
-                      <img
-                        src={image_dua}
-                      />
+                      <img src={image_dua} />
                     </div>
                     <div className={style.gridItem}>
-                      <img
-                        src={image_tiga}
-                      />
+                      <img src={image_tiga} />
                     </div>
                   </div>
                   {(to_appstore || to_playstore) && (
