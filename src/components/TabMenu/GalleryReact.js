@@ -5,18 +5,18 @@ import { Link } from "react-router-dom";
 
 const GalleryReact = () => {
   const [items] = useState(Menu);
-  const [visible] = useState(5);
-  //   const filterItem = (categItem) => {
-  //     const updatedItems = Menu.filter((curElem) => {
-  //       return curElem.category === categItem;
-  //     });
+  const [visible, setVisible] = useState(3);
+  // const filterItem = (categItem) => {
+  //   const updatedItems = Menu.filter((curElem) => {
+  //     return curElem.category === categItem;
+  //   });
 
-  //     setItems(updatedItems);
-  //   };
+  //   setItems(updatedItems);
+  // };
 
-  //   const showMoreItems = () => {
-  //     setVisible((prevValue) => prevValue + 3);
-  //   };
+  const showMoreItems = () => {
+    setVisible((prevValue) => prevValue + 3);
+  };
 
   return (
     <>
@@ -69,11 +69,11 @@ const GalleryReact = () => {
             );
           })}
         </div>
-        {/* <div className={style.showMore}>
+        <div className={style.showMore}>
           <button className={style.btnLarge} onClick={showMoreItems}>
             Load More
           </button>
-        </div> */}
+        </div>
       </div>
     </>
   );
