@@ -82,7 +82,7 @@ const Menu = [
   },
   {
     id: 5,
-    image: "/images/phinter2.jpg",
+    image: "/images/phinter3.png",
     name: "Phinter Mobile",
     category: "Apps",
     description:
@@ -91,12 +91,12 @@ const Menu = [
     alt: "team project",
     see: "See More",
     description_dua: "",
-    image_satu: "/images/phinter1.jpg",
-    image_dua: "/images/phinter3.jpg",
-    image_tiga: "/images/phinter4.jpg",
-    to_playstore: "",
+    image_satu: "/images/phinter1.png",
+    image_dua: "/images/phinter2.png",
+    image_tiga: "/images/phinter4.png",
+    to_playstore: "https://play.google.com/store/apps/details?id=com.phinter.phintraco",
     to_appstore: "https://apps.apple.com/us/app/phinter-mobile/id6475161724",
-    playstore: "",
+    playstore: "/images/playstore.png",
     appstore: "/images/appstore.png",
   },
 ];
