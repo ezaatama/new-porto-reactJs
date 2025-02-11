@@ -5,6 +5,8 @@ import ParticleBackground from "./ParticleBackground";
 import Content from "./Content";
 import GalleryReact from "../components/TabMenu/GalleryReact";
 
+const PDF_FILE = 'http://localhost:3000/file/resume_reza.pdf'
+
 function HeroSection({
   lightBg,
   lightText,
@@ -17,6 +19,15 @@ function HeroSection({
   alt,
   imgStart,
 }) {
+  const downloadFile = (url) => {
+    const filename = url.split('/').pop();
+    const aTag = document.createElement('a');
+    aTag.href = url;
+    aTag.setAttribute('download',filename);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  }
   return (
     <>
       <div className={style.particle}>
@@ -49,9 +60,7 @@ function HeroSection({
                 </p>
               </div>
               <div className={style.homeHeroButton}>
-                <Link to="/">
-                  <button className={style.btnWide}>{buttonLabel1}</button>
-                </Link>
+                  <button onClick={() => {downloadFile(PDF_FILE)}} className={style.btnWide}>{buttonLabel1}</button>
                 <Link to="/contact">
                   <button className={style.btnLarge}>{buttonLabel2}</button>
                 </Link>
