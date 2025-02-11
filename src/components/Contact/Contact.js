@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import style from "./Contact.module.css";
 import emailjs from "emailjs-com";
 import ParticleBackground from "../ParticleBackground";
-import ContactIllustration from "../../images/contact_illustration.svg";
+import ContactIllustration from "../../images/illustration.svg";
 
 const Result = () => {
   return (
