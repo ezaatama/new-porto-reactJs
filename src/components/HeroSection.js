@@ -5,7 +5,7 @@ import ParticleBackground from "./ParticleBackground";
 import Content from "./Content";
 import GalleryReact from "../components/TabMenu/GalleryReact";
 
-const PDF_FILE = 'http://localhost:3000/file/resume_reza.pdf'
+const PDF_FILE = 'https://drive.google.com/uc?export=download&id=1AbnsXSviyIsZWSJ1ThVaPInYiN4Y-Jnp'
 
 function HeroSection({
   lightBg,
@@ -20,10 +20,9 @@ function HeroSection({
   imgStart,
 }) {
   const downloadFile = (url) => {
-    const filename = url.split('/').pop();
     const aTag = document.createElement('a');
     aTag.href = url;
-    aTag.setAttribute('download',filename);
+    aTag.setAttribute('target', '_blank');
     document.body.appendChild(aTag);
     aTag.click();
     aTag.remove();
